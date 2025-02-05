@@ -1,0 +1,407 @@
+public class Code1{
+	public static void main(String[] args){
+		int x= 0;
+		do{
+			++x;
+			System.out.println(x);
+			if(++x<5)
+				continue;
+			++x;
+			System.out.println(x);
+		}while(++x<10);
+
+
+	}
+}
+----------------------------------
+public class Code2{
+	public static void main(String[] args){
+		for(int i =0;i++<5;i++){
+			System.out.println("hello");//1,3,5
+			i=i++;//1,4,5
+			System.out.println(i);
+
+		}
+	}
+}
+--------------------
+public class Code3{
+	public static void main(String[] args){
+		//args[0]="HELLO";
+		args[1]="Day!";
+		System.out.println(args[0] + " " + args[1]);
+	}
+}
+-------------------------------------
+public class Code4 {
+	public static void main(String[] args){
+		System.out.println("Welcome " + args[0] +"!");
+	}
+}
+----------------------------------
+public class Test {
+	public static void main(String[] args) {
+	boolean b1 = 0;
+	boolean b2 = 1;
+	System.out.println(b1 + b2);
+	}
+}
+A. 0
+B. 1
+C. true
+D. false
+E. compilation error
+Answer=E
+----------------------
+public class Test {
+	public static void main(String[] args) {
+	String #name = "Jane Doe";
+	int $age = 24;
+	Double _height = 123.5;
+        double ~temp = 37.5;
+	}
+}
+
+Ans:line 3 and line 6 will give errors
+--------------
+public class Test {
+public static void main(String[] args) {
+char c1 = 'a';
+int i1 = c1; //Line n1 
+System.out.println(i1); //Line n2
+}
+}
+What is the result of compiling and executing Test class?
+A. a
+B. 97
+C. Line n1 causes compilation failure
+D. Line n2 causes runtime error.
+Ans:b
+implict type casting
+------
+public class Test {
+public static void main(String[] args) {
+byte b1 = 10; //Line n1
+int i1 = b1; //Line n2
+byte b2 = i1; //Line n3
+System.out.println(b1 + i1 + b2);
+}
+}
+What is the result of compiling and executing Test class?
+A. Line n1 causes compilation error
+B. Line n2 causes compilation error.
+C. Line n3 causes compilation error.
+D. 30 printed on to console.
+Ans:3
+Explicit type casting
+-------
+For the given code what is the output?
+int x=100;
+int a=x++; 
+int b= ++x;
+int c= x++;
+int d= (a<b) ? (a<c) ? a: (b<c)? b: c :x;
+System.out.println(d);
+A. 100
+B. 101
+C. 102
+D. 103
+E. compilation fails
+Ans:A
+Another way:
+public class Test {
+	public static void main(String[] args) {
+		int x=100;
+		int a=x++; 
+		int b= ++x;
+		int c= x++;
+		if(a<b){
+			if(a<c){
+				System.out.println(a);
+			}
+			else{
+				if(b<c){
+					System.out.println(b);
+				}
+				else
+					System.out.println(c);
+				}
+		}
+			else
+			System.out.println(x);
+		
+	}
+}
+----------------------------------
+class Test{
+public static void main(String[] args){
+int a=100;
+System.out.println(-a++);
+}
+}
+A. -101
+B. 99
+c. Compilation error
+d. -100
+e. -99
+Ans:d
+----------------------------------
+class Test
+{
+public static void main(String[] args){
+int a = 20;
+int var= --a * a++ + a-- - --a;
+System.out.println("a = " + a);
+System.out.println("var = " + var);
+}
+}
+A.
+B.
+a = 18
+var=363
+C. Compilation Error
+D.
+a = 25
+var= 363
+Ans:B
+-----------------------------------------------------
+class Test
+{
+public static void main(String[] args){
+int i = 5;
+if (i++ < 6)
+{
+System.out.println(i++);
+}
+}
+}
+A. 5
+B. 6
+D. 7
+C. Program executes succesfully but nothing is printed on to console
+Ans:B
+----------------------------------
+class Test
+{
+public static void main(String[] args){
+int x = 4;//line-n1
+int y = 4++;//line-n2
+System.out.println(x);
+System.out.println(y);
+}
+}
+A. line-n1 CompileTimeError
+B. x=4
+y=5
+C. x=5
+y=5
+D. line-n2 CompileTimeError
+Ans:D
+-----------------------------
+Consider below statements:
+1. int x = 5____0;// Literal values can be with _ also but it should be in b/w not
+at the beginging or at the end
+
+class Test
+{
+public static void main(String[] args){
+int x = 5____0;
+System.out.println(x);
+}
+}
+Ans:50
+Underscore removed while executing
+----------------------------------------------------------------
+2.int y = __50;//invalid becoz starts with _
+3.int z = 50__;//invalid becoz in ends with _
+class Test
+{
+public static void main(String[] args){
+float f = 123.76_86f;//valid
+double d = 1_2_3_4;//valid
+System.out.println(f);
+System.out.println(d);
+
+}
+}
+4. float f = 123.76_86f;//valid
+5. double d = 1_2_3_4;//valid
+Answer
+123.7686
+1234.0
+Note:
+Compiler -> it checks only the syntax and makes the jvm execution smoothful
+JVM -> Creates the memory for the variables and perform type casting and
+generates the result
+-------------------------------------
+int x=10 ;
+if(++x < 10 && ((x/0)>10) ) { //11<10===> if(false)
+System.out.println("Hello");
+}
+else {
+System.out.println("Hi");
+}
+A. Hello
+B. Hi
+C. Compile Time Error
+D. Exception
+E. None of the above.
+Ans:B
+---------------------------------
+class Test
+{
+public static void main(String[] args){
+int i=10;
+int j=20;
+int k= (j+=i)/5;
+System.out.println(i+":"+j+":"+k);
+}
+}
+Answer:10:30:6
+-------------------------
+class Test
+{
+public static void main(String[] args){
+boolean b= false;
+if(b=true){
+System.out.println("hello");
+}else{
+System.out.println("hiee");
+}
+}
+}
+Answer:hello
+it is assigning the value from b=false to b =true
+---------------------------------------
+class Test
+{
+public static void main(String[] args){
+boolean b= false;
+if(b==true){
+System.out.println("hello");
+}else{
+System.out.println("hiee");
+}
+}
+}
+Answer:hiee
+---------------------------------------
+public class Test{
+public static void main(String args[]){
+if(true);
+}
+}
+A. Compile Time Error
+B. hello
+C. Some problem by jvm at the execution
+D. No Output
+Answer:D
+---------------------------------------
+public class Test{
+public static void main(String args[]){
+if(true)
+int x=10;
+}
+}
+A. Compile Time Error
+B. hello
+C. Some problem by jvm at the execution
+D. No Output
+Answer:A
+error: variable declaration not allowed here
+int x=10;
+----------------------
+public class Test{
+public static void main(String args[]){
+if(true) {
+int x=10; 
+}
+}
+}
+A. Compile Time Error
+B. hello
+C. Some problem by jvm at the execution
+D. No Output
+Answer:D
+-------------------
+public class Test{
+public static void main(String args[]){
+if(true)
+System.out.println("hello");
+System.out.println("hiee");
+}
+}
+How many statements are independent of if?
+A. 0-stmt
+B. 1-stmt
+C. 2-stmt
+D. 3-stmt
+Answer:B
+--------------------------------
+public class Test {
+public static void main(String[] args) {
+int i = 5;
+System.out.print(i+++"");
+System.out.print(i+"");
+System.out.print(++i+"");
+System.out.print(++i+i+++"");
+}
+}
+Predict the Output?
+A. 56716
+B. 66616
+C. 57817
+D. 67817
+Answer:A
+---------------------------public class Test {
+public static void main(String[] args) {
+int[] a ={0,2,4,1,3};
+for (int i=0;i<a.length ;i++ )
+a[i] = a[(a[i]+3)/a.length];
+System.out.println(a[1]);
+}
+}
+
+Predict the Output?
+A. CompileTime Error
+B. Some problem occured by jvm during execution
+C. 0
+D. 1
+E. 3
+F. None of the above
+Answer:F
+output:2
+-----------------------------
+public class Test {
+public static void main(String[] args) {
+int i =0,j=5;
+for (;(i<3) && (j++<10); ){
+System.out.print("" + i + "" +j);
+i++;
+}
+System.out.print(i +"" +j);
+}
+}
+Predict the Output?
+A. CompileTime Error
+B. Some problem occured by jvm during execution
+C. 06172838
+D. 06172839
+E. None of the above
+Answer:C
+-----------------------------
+public class Test {
+public static void main(String[] args) {
+int x =5;
+x*= 3*5 + 7*x-1 + ++x; //compound Assignment:x*=15+24+6;x*=55;x=5*55;275
+System.out.println(x);
+}
+}
+Predict the Output?
+A. CompileTime Error
+B. Some problem occured by jvm during execution
+C. 330
+D. 275
+E. None of the Above
+Answer:D
+

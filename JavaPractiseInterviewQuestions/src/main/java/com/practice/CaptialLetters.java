@@ -16,12 +16,17 @@ public class CaptialLetters {
 //			}
 //		}
 		char[] carr = inputString.toCharArray();
-		for (char c : carr) {
-			if (c >= 'A' && c <= 'Z') {
-				System.out.print(c);
+		for(int i=0;i<carr.length;i++) {
+			if (carr[i] >= 'A' && carr[i] <= 'Z') {
+			System.out.print(carr[i]);
 			}
 		}
-		System.out.println(s);
+//		for (char c : carr) {
+//			if (c >= 'A' && c <= 'Z') {
+//				System.out.print(c);
+//			}
+//		}
+		//System.out.println(s);
 	}
 
 }

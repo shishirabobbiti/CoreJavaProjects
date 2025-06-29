@@ -5,7 +5,7 @@ public class Program6{
 
 		i=i+2;
 		i+=2;
-		if(i>=5)
+		if(i<=5)
 			System.out.println("one");
 		else
 			System.out.println("two");

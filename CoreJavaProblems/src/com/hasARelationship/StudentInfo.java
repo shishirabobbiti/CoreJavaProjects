@@ -34,20 +34,20 @@ public class StudentInfo {
 
 
 	public static void main(String[] args) {
-		Student student = new Student(1234,"Shishira", 10) {
-			
-		};
-//		Student student = new Student(1234,"Shishira", 10);
-//		Book book1 = new Book(1, "Half Girlfriend", "Chetan Bhagat");
-//		Book book2 = new Book(2, "Can Love Happen Twice", "Chetan Bhagat");
-//		Book[] book={book1,book2};
-//		Address address = new Address(589, "Kurnool", "Kurnool", 518002);
-//		Bike bike1 = new Bike(1000, "Pept");
-//		Bike bike2 = new Bike(4534, "R15");
-//		Bike bike3 = new Bike(2000, "Vespa");
-//		Bike[] bike= {bike1,bike2,bike3};
-//		StudentInfo studentInfo = new StudentInfo(student, book, address,bike);
-//		studentInfo.getStudentInfo();
+//		Student student = new Student(1234,"Shishira", 10) {
+//			
+//		};
+		Student student = new Student(1234,"Shishira", 10);
+		Book book1 = new Book(1, "Half Girlfriend", "Chetan Bhagat");
+		Book book2 = new Book(2, "Can Love Happen Twice", "Chetan Bhagat");
+		Book[] book={book1,book2};
+		Address address = new Address(589, "Kurnool", "Kurnool", 518002);
+		Bike bike1 = new Bike(1000, "Pept");
+		Bike bike2 = new Bike(4534, "R15");
+		Bike bike3 = new Bike(2000, "Vespa");
+		Bike[] bike= {bike1,bike2,bike3};
+		StudentInfo studentInfo = new StudentInfo(student, book, address,bike);
+		studentInfo.getStudentInfo();
 		
 	}
 

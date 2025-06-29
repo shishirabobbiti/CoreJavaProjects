@@ -1,0 +1,33 @@
+Locating Elements:
+
+id:https://rahulshettyacademy.com/AutomationPractice/
+driver.findElement(By.id("checkBoxOption1");
+
+name:https://rahulshettyacademy.com/AutomationPractice/
+driver.findElement(By.name("checkBoxOption1");
+
+ClassName:https://rahulshettyacademy.com/AutomationPractice/
+driver.findElement(By.className("ui-autocomplete-input"))
+
+TagName:https://rahulshettyacademy.com/AutomationPractice/
+driver.findElement(By.tagName("a"))
+
+LinkText:https://rahulshettyacademy.com/AutomationPractice/
+driver.findElement(By.linkText("QA Meetup with Rahul Shetty @Pune - Limited Seats! Book Now!"))
+
+PartialLinkText:https://rahulshettyacademy.com/AutomationPractice/
+driver.findElement(By.partialLinkText("QA Meetup with Rahul Shetty @Pune"))
+
+Sibling,parent,Descendant:
+URL:https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers
+//label[text()='Username']//parent::div//following-sibling::div//descendant::input
+
+text:
+https://rahulshettyacademy.com/angularpractice/
+//label[text()='Name']//following-sibling::input
+
+xpath:https://rahulshettyacademy.com/angularpractice/
+//input[@type='submit']
+
+Contains:https://rahulshettyacademy.com/AutomationPractice/
+//a[contains(text(),'QA Meetup with Rahul Shetty ')]

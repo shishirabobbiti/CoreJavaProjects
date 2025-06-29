@@ -6,3 +6,5 @@ public class Code3{
 		System.out.println(args[0] + " " + args[1]);
 	}
 }	
+//javac Code3.java
+//java Code3 Welcome Hello

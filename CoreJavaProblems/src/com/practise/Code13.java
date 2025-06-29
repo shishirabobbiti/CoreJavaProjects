@@ -9,7 +9,8 @@ public class Code13{
 		int c=sc.nextInt();
 		for(int i=0;i<=r-1;i++){
 			for(int j=0;j<=c-1;j++){
-				if(j==0 || j==(c-1) || (i==j && j<=(c/2)) ||(i+j==r-1 && i<=(r/2))){
+				if(j==0 || j==(c-1) || (i==j && i<=(r/2)) ||(i+j==r-1 && j>=(c/2))){
+					//if(j==0 || j==(c-1) || (i==j) && i<=(r/2) ||(i+j==r-1) && i<=r/2){
 					System.out.print("*");
 				}
 				else

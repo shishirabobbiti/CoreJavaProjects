@@ -1,7 +1,7 @@
 package com.practise;
 public class Program7{
 		public static void main(String[] args){
-			int i=1;
+			int i=2;
 			switch(i){
 			default:
 				System.out.println("Default value");
@@ -16,10 +16,6 @@ public class Program7{
 			case 2+1:
 				System.out.println("value is 3	");
 			break;
-			
-			
-
-
 }
 }
 }

@@ -12,11 +12,13 @@ class Parent3{
 class Child extends Parent3{
 
 	public void getText(){
-		System.out.println(super.p);
+		System.out.println("super: " +super.p);
+		System.out.println("ClassName: " + Parent3.p);
 	}
 
 	public Child(){
 		super();
+		System.out.println("Child Construtor");
 	}
 
 }

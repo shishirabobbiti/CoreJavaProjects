@@ -11,9 +11,9 @@ public class Program4{
 		int k=0;
 		k=(j++)+(++j)+(++j);
 		System.out.println(k);
-		System.out.println(i--);//post increment
+		System.out.println(i--);//post decrement
 		System.out.println(i);
-		System.out.println(--i);//pre increment
+		System.out.println(--i);//pre decrement
 		System.out.println(i);
 		
 		j=5;

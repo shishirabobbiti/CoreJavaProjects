@@ -353,14 +353,7 @@ B. 66616
 C. 57817
 D. 67817
 Answer:A
----------------------------public class Test {
-public static void main(String[] args) {
-int[] a ={0,2,4,1,3};
-for (int i=0;i<a.length ;i++ )
-a[i] = a[(a[i]+3)/a.length];
-System.out.println(a[1]);
-}
-}
+--------------------------- 
 
 Predict the Output?
 A. CompileTime Error
@@ -393,7 +386,7 @@ Answer:C
 public class Test {
 public static void main(String[] args) {
 int x =5;
-x*= 3*5 + 7*x-1 + ++x; //compound Assignment:x*=15+24+6;x*=55;x=5*55;275
+x*= 3*5 + 7*x-1 + ++x; //compound Assignment:x*=15+34+6;x*=55;x=5*55;275
 System.out.println(x);
 }
 }

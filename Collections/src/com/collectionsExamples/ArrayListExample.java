@@ -25,6 +25,7 @@ class Cart {
 		while(iterator.hasNext()) {
 			System.out.println(iterator.next());
 		}
+		//System.out.println(cart);
 	}
 	
 	public void removeItem(int index) {

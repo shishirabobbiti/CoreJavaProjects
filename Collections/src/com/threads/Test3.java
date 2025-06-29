@@ -7,7 +7,8 @@ class MyThread5 extends Thread {
 			System.out.println("Sita Thread");
 			try {
 				Thread.sleep(2000);
-			} catch (InterruptedException e) {
+			} 
+			catch (InterruptedException e) {
 			}
 		}
 	}

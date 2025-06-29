@@ -1,0 +1,22 @@
+1. What is a Thread?
+2. ThreadScheduler
+3. Thread Create -> Extends Thread Class, Implement Runnable
+4. run(), start()
+5. start() -> thread creation logic, calling run()
+6. Always override run() but not start()
+7. start() will always call run() parameterless.
+8. Learn about @Override annotation
+9. Cant create an already born thread
+10. Difference in creating thread with Thread and Runnable
+11. Implements Runnable is best rather than extending Thread class
+12. getName() vs setName()
+13. Default priority=5, more priority->more chances
+14. getPriority() vs setPriority()
+15. join()
+16. yield() -> code from other language(native mthod area)
+17. deadlock-> threads waiting for each other for infinite time
+18. interrupt()
+19. Synchronization at method level, class level, object level
+20. wait(), notify(), notifyAll(), object level synchronization
+21. isDaemon() vs setDaemon()
+22. Once main thread is done all the daemon threads are also destroyed
